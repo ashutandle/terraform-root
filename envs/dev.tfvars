@@ -2,7 +2,7 @@ environment   = "dev"
 project_name  = "myapp"
 aws_region    = "us-east-1"
 vpc_cidr      = "10.0.0.0/16"
-bucket_suffix = "assets-dev-20240101"
+bucket_suffix = "assets-dev-20240201"
 
 tags = {
   Owner      = "dev-team"
@@ -18,6 +18,6 @@ subnets = {
 }
 
 ec2_instances = {
-  "web-server-1" = { ami_id = "ami-0c02fb55956c7d316", instance_type = "t2.micro", subnet_key = "public-subnet-1" }
-  "web-server-2" = { ami_id = "ami-0c02fb55956c7d316", instance_type = "t2.micro", subnet_key = "public-subnet-2" }
+  "web-server-1" = { ami_id = "ami-0c02fb55956c7d316", instance_type = "t3.micro", subnet_key = "public-subnet-1" }
+  "web-server-2" = { ami_id = "ami-0c02fb55956c7d316", instance_type = "t3.micro", subnet_key = "public-subnet-2" }
 }
