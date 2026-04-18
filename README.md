@@ -54,10 +54,9 @@ terraform apply -var-file="envs/prod.tfvars"
 | Feature               | Dev         | UAT         | Prod        |
 |-----------------------|-------------|-------------|-------------|
 | VPC CIDR              | 10.0.0.0/16 | 10.1.0.0/16 | 10.2.0.0/16 |
-| EC2 Instance Type     | t2.micro    | t2.small    | t3.medium   |
+| EC2 Instance Type     | t3.micro    | t3.small    | t3.medium   |
 | SSH Access            | Open        | Open        | VPC-only    |
 | Termination Protection| No          | No          | Yes         |
 | S3 Versioning         | Suspended   | Suspended   | Enabled     |
 | S3 force_destroy      | Yes         | Yes         | No          |
 
-> Replace `<your-org>` in `main.tf` source URLs with your actual GitHub organisation or username.
